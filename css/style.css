@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.weather_container{
+    background: #000000;
+    position: absolute;
+    top:10%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.weather_card{
+    background: linear-gradient(32.62deg, #000000 0%, rgba(36, 36, 36, 0.9) 100%);
+    /* background: white; */
+    position: absolute;
+    top : 10% ;
+    width: 400px;
+    height: 500px;
+    margin-left: 0%;
+    border-radius: 20px;
+}
+.city_name{
+    position: absolute;
+    width: 115px;
+    height: 38px;
+    top : 36px;
+    left : 37px;
+    bottom: 716px;
+    right : 248px;
+
+
+    font-family: Roboto;
+    font-size: 20px; 
+
+
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+
+     color: #FFFFFF;
+
+
+
+
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(50px);
+     border-radius: 10px;
+}
+
+.time{
+    position: absolute;
+    width: 115px;
+    height: 40px;
+    top :35px;
+    left:285px;
+    bottom:425px;
+    right:0px;
+
+
+
+    font-family: Roboto;
+    font-size: 22px;
+
+
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+
+    color: #FFFFFF;
+}
+.weather_img{
+    position: absolute;
+    width: 190px;
+    height: 168px;
+    left: 105px;
+    right:105px;
+    top: 103px;
+    bottom:229px;
+}
+
+
+.weather_des{
+    position: absolute;
+    width: 94px;
+    height: 21px;
+    left: 153px;
+    right: 153px;
+    top: 298px;
+    bottom:181px;
+
+
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #6C6C6C;
+
+}
+.weather_icon{
+    width: 30px;
+    height: 30px
+}
+#wind{
+    position: absolute;
+    top:349px;
+    bottom:121px ;
+    left: 37px;
+    right: 333px ;
+}
+#humidity{
+    position: absolute;
+    top:389px;
+    bottom:81px ;
+    left: 37px;
+    right: 333px ;
+}
+#cloud{
+    position: absolute;
+    top:429px;
+    bottom:41px ;
+    left: 34px;
+    right: 336px ;
+}
+.wind_text{
+    position: absolute;
+    width: 69px;
+    height: 21px;
+    right: 247px;
+    left:84px;
+    bottom:125px;
+    top: 354px;
+    
+    font-family: Roboto;
+    font-size: 18px;
+
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.humidity_text{
+    position: absolute;
+    width: 34px;
+    height: 21px;
+    left: 83px;
+    right:283px;
+    top: 393px;
+    bottom:86px;
+
+    font-family: Roboto;
+    font-size: 18px;
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.cloud_text{
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 432px;
+    bottom:47px ;
+    right: 296px;
+    left: 83px;
+
+    font-family: Roboto;
+    font-size: 18px;
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFEFE;
+
+}
+.temperature{
+    position: absolute;
+    width: 108px;
+    height: 84px;
+    left: 279px;
+    right :13;
+    top: 375px;
+    bottom:41px;
+
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 72px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
