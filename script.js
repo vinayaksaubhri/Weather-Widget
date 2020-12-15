@@ -1,6 +1,6 @@
 const api = {
     key : "f6eba6a86b784c17acd75643201112",
-    base : "http://api.weatherapi.com/v1/current.json?"
+    base : "https://api.weatherapi.com/v1/current.json?"
 }
 
 window.onload = () => {
@@ -71,8 +71,8 @@ function display(weather){
     let cloud=document.querySelector('.cloud_text');
     cloud.innerText=`${weather.current.cloud}`;
 
-    let temp=document.querySelector('.temperature');
 
+    let temp=document.querySelector('.temperature');
     temp.innerText=`${weather.current.temp_c+'°'}`;
 }
  
