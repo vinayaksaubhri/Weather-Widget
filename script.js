@@ -10,7 +10,8 @@ function success(position){
     let lat = crd.latitude;
     let long = crd.longitude;
       
-    const url = `https:/api.weatherapi.com/v1/current.json?key=f6eba6a86b784c17acd75643201112&q=%20${lat},${long}`;
+    const proxy='{https://cors-anywhere.herokuapp.com/}'
+    const url = `${proxy}api.weatherapi.com/v1/current.json?key=f6eba6a86b784c17acd75643201112&q=%20${lat},${long}`;
 
 
     fetch(url,{mode : 'cors'}).then(weather => {
