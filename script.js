@@ -1,4 +1,7 @@
-
+const api = {
+    key : "f6eba6a86b784c17acd75643201112",
+    base : "http://api.weatherapi.com/v1/current.json?"
+}
 
 window.onload = () => {
     navigator.geolocation.getCurrentPosition(success);
@@ -10,7 +13,7 @@ function success(position){
     let lat = crd.latitude;
     let long = crd.longitude;
       
-    const url = `https://api.weatherapi.com/v1/current.json?key=f6eba6a86b784c17acd75643201112&q=%20${lat},${long}`;
+    const url = `${api.base}key=${api.key}&q=%20${lat},${long}`;
 
 
     fetch(url).then(weather => {
@@ -20,7 +23,19 @@ function success(position){
 }
 
 
+const searchbox = document.querySelector('.search-box');
+ searchbox.addEventListener('keypress' , setQuery);
+ function setQuery(evt){
+     if(evt.keyCode == 13){
+         getResults(searchbox.value);
+     }
+ }
 
+ function getResults(query){
+     fetch(`${api.base}key=${api.key}&q=${query}`).then(weather => {
+         return weather.json();
+     }).then(display);
+ }
 
 
 function display(weather){
@@ -57,7 +72,8 @@ function display(weather){
     cloud.innerText=`${weather.current.cloud}`;
 
     let temp=document.querySelector('.temperature');
+
     temp.innerText=`${weather.current.temp_c+'°'}`;
 }
-
+ 
 

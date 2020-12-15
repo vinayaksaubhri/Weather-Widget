@@ -135,7 +135,7 @@
 }
 .wind_text{
     position: absolute;
-    width: 75px;
+    width: 90px;
     height: 21px;
     right: 247px;
     left:84px;
@@ -193,10 +193,9 @@
 }
 .temperature{
     position: absolute;
-    width: 108px;
+    width: 120px;
     height: 84px;
-    left: 279px;
-    right :13;
+    left: 274px;
     top: 375px;
     bottom:41px;
 
