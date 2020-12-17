@@ -28,13 +28,21 @@ const searchbox = document.querySelector('.search-box');
  function setQuery(evt){
      if(evt.keyCode == 13){
          getResults(searchbox.value);
+        
      }
  }
+ 
+ const clearText = () =>{
+    const search = document.querySelector("#search");
+    search.value = "";
+
+  };
 
  function getResults(query){
      fetch(`${api.base}key=${api.key}&q=${query}`).then(weather => {
          return weather.json();
      }).then(display);
+     clearText();
  }
 
 
@@ -74,6 +82,8 @@ function display(weather){
 
     let temp=document.querySelector('.temperature');
     temp.innerText=`${weather.current.temp_c+'°'}`;
+
+
 }
  
 
