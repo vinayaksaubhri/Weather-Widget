@@ -81,7 +81,8 @@ function display(weather){
 
 
     let temp=document.querySelector('.temperature');
-    temp.innerText=`${weather.current.temp_c+'°'}`;
+    let weather_round_off = Math.round(weather.current.temp_c);
+    temp.innerText=`${weather_round_off+'°'}`;
 
 
 }
