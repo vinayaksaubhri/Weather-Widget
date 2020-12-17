@@ -35,7 +35,7 @@ const searchbox = document.querySelector('.search-box');
  const clearText = () =>{
     const search = document.querySelector("#search");
     search.value = "";
-
+    search.blur();
   };
 
  function getResults(query){
