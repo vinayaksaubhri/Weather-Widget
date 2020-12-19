@@ -62,8 +62,10 @@ function display(weather){
         hour = '0'+hour;
     }
     time_element.innerText= `${hour+':'+min}`;
+    
+    document.getElementById("image").src = `images/images/${weather.current.condition.code}.png`
 
-
+   
     let weather_msg=document.querySelector('#weather_des');
     weather_msg.innerText=`${weather.current.condition.text}`;
 
