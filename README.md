@@ -12,4 +12,6 @@ Live Preview: <https://weather-widget-git-master.vinayaksaubhri.vercel.app/>
 
 ## Preview
 
-[![Preview](preview.png?raw=true)](https://mwrod.github.io/weather-widget/)
+<p align="center">
+  <img src="images\Preview.png"/>
+</p>
